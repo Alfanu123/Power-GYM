@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PowerGym | Train Your Body</title>
+</head>
+<link rel="stylesheet" href="style.css" />
+<body>
+
+  <header>
+    <h1>PowerGym</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="program.html">Program</a>
+      <a href="statistik.html">Personal Trainer</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="BMI.html">Kalkulator BMI</a>
+    </nav>
+  </header>
+
+  <section id="bmi-calculator">
+    <div class="section-title">
+      <h3>Kalkulator BMI</h3>
+      <p>Cek indeks massa tubuh Anda</p>
+      <p>BMI adalah singkatan dari Body Mass Index yaitu alat ukur sederhana yang digunakan untuk memperkirakan lemak tubuh berdasarkan rasio berat badan (kg) dan tinggi badan BMI digunakan untuk menentukan apakah berat badan seseorang ideal, kurang, berlebih, atau obesitas. </p>
+    </div>
+
+    <div class="bmi-container">
+      <div class="bmi-input">
+        <div class="input-group">
+          <label for="height">Tinggi (cm):</label>
+          <input type="number" id="height" placeholder="Masukkan tinggi badan" />
+        </div>
+        <div class="input-group">
+          <label for="weight">Berat (kg):</label>
+          <input type="number" id="weight" placeholder="Masukkan berat badan" />
+        </div>
+        <button class="btn" onclick="hitungBMI()">Hitung BMI</button>
+      </div>
+
+      <div class="bmi-result" id="bmi-result" style="display: none;">
+        <h4>Hasil Anda</h4>
+        <div class="result-info">
+          <p>BMI: <span id="bmi-value">0</span></p>
+          <p>Kategori: <span id="bmi-category">-</span></p>
+          
+        </div>
+        <div class="bmi-info">
+          <p><strong>Kategori BMI:</strong></p>
+          <ul>
+            <li>Kurang berat: BMI &lt; 18.5</li>
+            <li>Normal: 18.5 - 24.9</li>
+            <li>Overweight: 25 - 29.9</li>
+            <li>Obese: BMI ≥ 30</li>
+          </ul>
+          <button class="btn-konsultasi" onclick="window.location.href='kontak.html'">Konsultasi Gratis</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="program">
+    <div class="section-title">
+      <h3>Program Unggulan</h3>
+      <p>Latihan yang dirancang khusus untuk semua level</p>
+    </div>
+
+    <div class="programs">
+      <div class="card">
+        <h4>Strength Training</h4>
+        <p>Meningkatkan kekuatan otot dan massa tubuh dengan metode terukur.</p>
+      </div>
+      <div class="card">
+        <h4>Fat Loss</h4>
+        <p>Program pembakaran lemak efektif dengan kombinasi cardio dan weight.</p>
+      </div>
+      <div class="card">
+        <h4>Personal Trainer</h4>
+        <p>Pendampingan 1-on-1 untuk hasil maksimal dan aman.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="stats">
+    <div class="section-title">
+      <h3>Statistik Kami</h3>
+      <p>Kepercayaan member adalah prioritas</p>
+    </div>
+
+    <div class="counter">
+      <div>
+        <h5 id="member">0</h5>
+        <p>Member Aktif</p>
+      </div>
+      <div>
+        <h5 id="trainer">0</h5>
+        <p>Trainer Profesional</p>
+      </div>
+      <div>
+        <h5 id="years">0</h5>
+        <p>Tahun Beroperasi</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>© 2026 PowerGym. All Rights Reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
