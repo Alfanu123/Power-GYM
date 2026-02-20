@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PowerGym | Train Your Body</title>
 </head>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
+
 <body>
 
   <header>
     <h1>PowerGym</h1>
-    <nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-menu" id="navMenu">
       <a href="#home">Home</a>
-      <a href="program.html">Program</a>
+      <a href="program.html">Membership</a>
       <a href="statistik.html">Personal Trainer</a>
       <a href="kontak.html">Kontak</a>
       <a href="BMI.html">Kalkulator BMI</a>
@@ -21,9 +25,44 @@
 
   <section class="hero" id="home">
     <div class="hero-content">
-      <h2>Build Your Body, Build Your Power</h2>
-      <p>Gym modern dengan pelatih profesional dan fasilitas lengkap untuk membantu kamu mencapai body goals.</p>
-      <button class="btn" onclick="joinNow()">Gabung Sekarang</button>
+      <div class="hero-text">
+        <h2>Build Your Body, Build Your Power</h2>
+        <p>Gym modern dengan pelatih profesional dan fasilitas lengkap untuk membantu kamu mencapai body goals.</p>
+        <a href="program.html" class="btn">Gabung sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" aria-label="Layanan Kami">
+    <div class="section-title">
+      <h3>Layanan Kami</h3>
+      <p>Pilih aktivitas yang kamu sukai</p>
+    </div>
+    <div class="services-container">
+      <div class="service-card" style="background-image: url('image/yoga.jpg');">
+        <div class="service-info">
+          <h4>Yoga</h4>
+          <p>Relaksasi dan fleksibilitas dengan sesi yoga profesional.</p>
+        </div>
+      </div>
+      <div class="service-card" style="background-image: url('image/giatsenampagi.jpg');">
+        <div class="service-info">
+          <h4>Senam Pagi</h4>
+          <p>Bangun energi setiap pagi dengan senam bersama instruktur.</p>
+        </div>
+      </div>
+      <div class="service-card" style="background-image: url('image/boxing.jpg');">
+        <div class="service-info">
+          <h4>Boxing</h4>
+          <p>Latihan tinju intens untuk kekuatan dan ketahanan.</p>
+        </div>
+      </div>
+      <div class="service-card" style="background-image: url('image/dance.jpg');">
+        <div class="service-info">
+          <h4>Dance</h4>
+          <p>Gerakkan tubuhmu dengan irama dan gaya tari modern.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -39,21 +78,18 @@
       </div>
     </div>
   </section>
-  
+
   <section class="testimonials" aria-label="Testimoni Member">
     <div class="section-title">
       <h3>Testimoni Anggota</h3>
       <p>Inilah pengalaman nyata dari member kami</p>
     </div>
     <div class="testimonials-container">
-      <div class="member-badge">
-        <strong>1200+</strong>
-        <span>Member Puas</span>
-      </div>
       <div class="testimonial-cards">
         <div class="testimonial-card">
           <img src="https://i.pravatar.cc/100?img=32" alt="Foto anggota A">
-          <p class="testimonial-quote">"Pelatihnya profesional dan fasilitasnya lengkap. Hasilnya nyata dalam 2 bulan!"</p>
+          <p class="testimonial-quote">"Pelatihnya profesional dan fasilitasnya lengkap. Hasilnya nyata dalam 2 bulan!"
+          </p>
           <p class="testimonial-author">Alya Putri — Member</p>
         </div>
 
@@ -72,33 +108,46 @@
     </div>
   </section>
 
-  <section id="stats">
-    <div class="section-title">
-      <h3>Statistik Kami</h3>
-      <p>Kepercayaan member adalah prioritas</p>
-    </div>
-
-    <div class="counter">
-      <div>
-        <h5 id="member">0</h5>
-        <p>Member Aktif</p>
-      </div>
-      <div>
-        <h5 id="trainer">0</h5>
-        <p>Trainer Profesional</p>
-      </div>
-      <div>
-        <h5 id="years">0</h5>
-        <p>Tahun Beroperasi</p>
-      </div>
-    </div>
-  </section>
-
   <footer id="contact">
-    <p>© 2026 PowerGym. All Rights Reserved.</p>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>PowerGym</h4>
+        <p>Bergabunglah dengan kami untuk mencapai bentuk tubuh impian Anda. Fasilitas lengkap, pelatih profesional, dan
+          komunitas yang mendukung.</p>
+        <div class="social-links">
+          <a href="https://web.facebook.com/groups/562115782271021/"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.instagram.com/fitgym.sidoarjo/"><i class="ri-instagram-line"></i></a>
+          <a href="https://x.com/GymBodyFitness_"><i class="ri-twitter-x-line"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigasi</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="program.html">Membership</a></li>
+          <li><a href="statistik.html">Personal Trainer</a></li>
+          <li><a href="BMI.html">Kalkulator BMI</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <ul class="footer-links">
+          <li><a href="kontak.html">Hubungi Kami</a></li>
+          <li><a href="#">Support Center</a></li>
+          <li><a href="#">Syarat & Ketentuan</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 PowerGym. All Rights Reserved.</p>
+    </div>
   </footer>
 
   <script src="main.js"></script>
 
 </body>
+
 </html>
