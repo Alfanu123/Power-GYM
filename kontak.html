@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontak | PowerGym</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <h1>PowerGym</h1>
-  <nav>
-    <a href="index.html">Home</a>
-      <a href="program.html">Program</a>
+  <header>
+    <h1>PowerGym</h1>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="program.html">Membership</a>
       <a href="statistik.html">Personal Trainer</a>
       <a href="kontak.html">Kontak</a>
       <a href="BMI.html">Kalkulator BMI</a>
-  </nav>
-</header>
+    </nav>
+  </header>
 
-<section>
-  <div class="section-title">
-    <h3>Hubungi Kami</h3>
-    <p>Siap bantu kamu mulai hidup sehat</p>
-  </div>
+  <section>
+    <div class="section-title">
+      <h3>Hubungi Kami</h3>
+      <p>Siap bantu kamu mulai hidup sehat</p>
+    </div>
     <div class="contact-form">
       <h4>Form Konsultasi Gratis</h4>
       <form id="konsultasiForm">
@@ -49,13 +54,53 @@
         <button type="submit" class="btn">Kirim Konsultasi</button>
       </form>
     </div>
-  </div>
-</section>
 
-<footer>
-  <p>© 2026 PowerGym</p>
-</footer>
+    <!-- Map showing gym location -->
+    <div class="map-container">
+      <!-- Replace the src URL with the actual Google Maps embed link for your gym -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.7986055404226!2d112.63745247500083!3d-7.3764550926329715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e3cdd948e7d1%3A0xbc4b2cf3e343eef0!2sFitnes%20BUGARIN%20GYM!5e0!3m2!1sid!2sid!4v1771599144220!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>PowerGym</h4>
+        <p>Bergabunglah dengan kami untuk mencapai bentuk tubuh impian Anda. Fasilitas lengkap, pelatih profesional, dan
+          komunitas yang mendukung.</p>
+        <div class="social-links">
+          <a href="https://web.facebook.com/groups/562115782271021/"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.instagram.com/fitgym.sidoarjo/"><i class="ri-instagram-line"></i></a>
+          <a href="https://x.com/GymBodyFitness_"><i class="ri-twitter-x-line"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigasi</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="program.html">Membership</a></li>
+          <li><a href="statistik.html">Personal Trainer</a></li>
+          <li><a href="BMI.html">Kalkulator BMI</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <ul class="footer-links">
+          <li><a href="kontak.html">Hubungi Kami</a></li>
+          <li><a href="#">Support Center</a></li>
+          <li><a href="#">Syarat & Ketentuan</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 PowerGym. All Rights Reserved.</p>
+    </div>
+  </footer>
 
   <script src="main.js"></script>
-</body> 
+</body>
+
 </html>
